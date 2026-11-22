@@ -1,0 +1,7 @@
+split,dev,dev,dev,test,test,test,train,train,train
+country,India,Japan,Norway,India,Japan,Norway,India,Japan,Norway
+label,,,,,,,,,
+D00,230,590,1328,228,619,1194,154,416,930
+D10,15,612,273,13,559,254,20,1030,450
+D20,335,893,64,284,916,79,332,1091,77
+D40,393,367,61,405,330,69,840,538,122
