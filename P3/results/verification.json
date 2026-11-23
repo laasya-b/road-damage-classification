@@ -1,0 +1,15 @@
+{
+  "runs_verified": [
+    "frozen_seed0",
+    "layer4_seed0",
+    "frozen_seed1",
+    "layer4_seed1",
+    "frozen_seed2",
+    "layer4_seed2"
+  ],
+  "metrics_recomputed_from_logits": true,
+  "best_epochs_verified": true,
+  "earlier_backbone_unchanged": true,
+  "split_and_trainer_hashes_verified": true,
+  "test_evaluated": false
+}

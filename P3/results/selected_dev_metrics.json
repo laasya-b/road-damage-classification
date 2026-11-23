@@ -1,0 +1,66 @@
+{
+  "macro_f1": 0.8165820336549664,
+  "accuracy": 0.8211586901763224,
+  "recall_per_class": {
+    "D00": 0.8212290502793296,
+    "D10": 0.8133333333333334,
+    "D20": 0.7708978328173375,
+    "D40": 0.9086479902557856
+  },
+  "d40_recall": 0.9086479902557856,
+  "confusion_matrix": [
+    [
+      1764,
+      180,
+      104,
+      100
+    ],
+    [
+      83,
+      732,
+      65,
+      20
+    ],
+    [
+      143,
+      105,
+      996,
+      48
+    ],
+    [
+      40,
+      15,
+      20,
+      746
+    ]
+  ],
+  "f1_per_country": {
+    "India": 0.6727060637792839,
+    "Japan": 0.8051497068082168,
+    "Norway": 0.6881217388305788
+  },
+  "best_epoch": 4,
+  "train_counts": {
+    "D00": 1500,
+    "D10": 1500,
+    "D20": 1500,
+    "D40": 1500
+  },
+  "config": {
+    "csv": "/home/jonat/CS539/road-damage-classification/P1/splits.csv",
+    "data_root": "/home/jonat/CS539/.p3-data",
+    "out": "/home/jonat/CS539/road-damage-classification/P3/runs/layer4_seed0",
+    "epochs": 20,
+    "patience": 5,
+    "batch_size": 32,
+    "head_lr": 0.001,
+    "layer4_lr": 0.0001,
+    "weight_decay": 0.0001,
+    "hidden": 256,
+    "dropout": 0.3,
+    "seed": 0,
+    "workers": 2,
+    "unfreeze_layer4": true,
+    "no_pretrained": false
+  }
+}

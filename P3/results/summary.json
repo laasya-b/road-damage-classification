@@ -1,0 +1,170 @@
+{
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "variants": {
+    "frozen": {
+      "macro_f1": {
+        "mean": 0.7413729774546304,
+        "sample_std": 0.0016673037896941336
+      },
+      "accuracy": {
+        "mean": 0.7463669831428018,
+        "sample_std": 0.004315260114574704
+      },
+      "d40_recall": {
+        "mean": 0.8639870077141697,
+        "sample_std": 0.015708925799555948
+      },
+      "recall_D00": {
+        "mean": 0.7267225325884544,
+        "sample_std": 0.016531918905553715
+      },
+      "recall_D10": {
+        "mean": 0.7322222222222222,
+        "sample_std": 0.036632981159632316
+      },
+      "recall_D20": {
+        "mean": 0.7141382868937048,
+        "sample_std": 0.007023043131484125
+      },
+      "recall_D40": {
+        "mean": 0.8639870077141697,
+        "sample_std": 0.015708925799555948
+      },
+      "f1_India": {
+        "mean": 0.5723579898411151,
+        "sample_std": 0.020187260729004956
+      },
+      "f1_Japan": {
+        "mean": 0.7041315244728137,
+        "sample_std": 0.012844201830147488
+      },
+      "f1_Norway": {
+        "mean": 0.614453748392682,
+        "sample_std": 0.017274339070919246
+      }
+    },
+    "layer4": {
+      "macro_f1": {
+        "mean": 0.8189730543776239,
+        "sample_std": 0.003818131392039869
+      },
+      "accuracy": {
+        "mean": 0.8234838209649292,
+        "sample_std": 0.004714406146326907
+      },
+      "d40_recall": {
+        "mean": 0.8781973203410475,
+        "sample_std": 0.028798027813731752
+      },
+      "recall_D00": {
+        "mean": 0.8201427684667908,
+        "sample_std": 0.016553754760937598
+      },
+      "recall_D10": {
+        "mean": 0.7981481481481482,
+        "sample_std": 0.01344092393453634
+      },
+      "recall_D20": {
+        "mean": 0.8119195046439629,
+        "sample_std": 0.035544775551718366
+      },
+      "recall_D40": {
+        "mean": 0.8781973203410475,
+        "sample_std": 0.028798027813731752
+      },
+      "f1_India": {
+        "mean": 0.6601546154910918,
+        "sample_std": 0.01979814068576828
+      },
+      "f1_Japan": {
+        "mean": 0.803408784643428,
+        "sample_std": 0.01048616586709417
+      },
+      "f1_Norway": {
+        "mean": 0.7087288749931838,
+        "sample_std": 0.017873016289163542
+      }
+    }
+  },
+  "paired_deltas": {
+    "macro_f1": {
+      "mean": 0.07760007692299349,
+      "sample_std": 0.002298131069821874
+    },
+    "accuracy": {
+      "mean": 0.07711683782212746,
+      "sample_std": 0.00337833671268413
+    },
+    "d40_recall": {
+      "mean": 0.014210312626877775,
+      "sample_std": 0.0444092859565581
+    }
+  },
+  "selection": {
+    "variant": "layer4",
+    "seed": 0,
+    "criterion": "higher mean dev macro-F1 over paired seeds; ties favor frozen",
+    "checkpoint": "/home/jonat/CS539/road-damage-classification/P3/runs/layer4_seed0/best_model.pt",
+    "dev_logits": "/home/jonat/CS539/road-damage-classification/P3/runs/layer4_seed0/dev_logits.csv",
+    "test_evaluated": false
+  },
+  "provenance": {
+    "split_sha256": "f7db4aa0ecde488a3cd6fbe1183aad8e3982760ad92268816c56032a30026e44",
+    "trainer_sha256": "d5d7be6c52e56f2f44d2f550615ebe2a0ec0c33605a43c3b39c4539747ac914b",
+    "data_root": "/home/jonat/CS539/.p3-data",
+    "counts": {
+      "train": 6000,
+      "dev": 5161,
+      "test": 4950
+    },
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "epochs": 20,
+    "patience": 5,
+    "workers": 2,
+    "versions": {
+      "torch": "2.15.0",
+      "torchvision": "0.29.2",
+      "numpy": "2.5.5",
+      "pandas": "3.1.1",
+      "scikit-learn": "1.9.1",
+      "pillow": "13.0.0"
+    },
+    "gpu": "NVIDIA GeForce RTX 4070 SUPER",
+    "cuda": "13.2",
+    "controls": {
+      "batch_size": 32,
+      "head_lr": 0.001,
+      "layer4_lr": 0.0001,
+      "weight_decay": 0.0001,
+      "hidden": 256,
+      "dropout": 0.3
+    },
+    "test_evaluated": false
+  },
+  "error_transitions": {
+    "D00": {
+      "corrected": 352,
+      "regressed": 108
+    },
+    "D10": {
+      "corrected": 98,
+      "regressed": 63
+    },
+    "D20": {
+      "corrected": 151,
+      "regressed": 71
+    },
+    "D40": {
+      "corrected": 77,
+      "regressed": 26
+    }
+  }
+}
