@@ -28,4 +28,4 @@ Main error: over-predicting D10 (17% of D00 and 16% of D20 dev patches → D10; 
 - `dev_metrics.json`: dev metrics, confusion matrix, full config
 - `history.csv`: per-epoch losses and dev F1
 - `dev_logits.csv`: raw dev logits per patch (for P4 temperature scaling and review threshold)
-- `best_model.pt`: in Google Drive (too large for GitHub): DRIVE_LINK_HERE
+- `best_model.pt`: in Google Drive (too large for GitHub): https://drive.google.com/drive/folders/1COXnTPZ_V__AVdtL9gAnlkdG6uQseZ_e?usp=sharing
